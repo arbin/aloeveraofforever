@@ -1,0 +1,354 @@
+{% extends "base.html" %}
+{% block title %}<title>Aloe Vera Benefits - Aloe Vera Uses - Forever Living - Online Health Calculator</title>
+<meta name="keywords" content="aloe benefits,benefits of aloe vera,the benefits of aloe vera,what are the benefits of aloe vera,the benefits of aloe,aloe vera gel benefit,aloe vera juice benefits,benefits of aloe vera juice,aloe barbadensis,forever living aloe vera,forever living uk,forever living aloe,forever living products aloe,forever living products uk" />
+<meta name="description" content="Forever Living Products, the World's leading grower and processor of Aloe Vera." >
+{% endblock %}
+{% block style %}
+	<style>
+
+		::-moz-selection{background:#a5dc4f;color:#fff;text-shadow:none}
+		::selection{background:#a5dc4f;color:#fff;text-shadow:none}
+
+		.logotext.square:hover h1,
+		.logotext.oval:hover h1 {
+			background:#a5dc4f;
+		}
+
+		#progress-bar {background:#a5dc4f}
+
+		.contact button,
+		#head .newsletter button,
+		.calltoaction a {
+			background-color:#a5dc4f;
+			background-image:-webkit-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-moz-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-ms-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-o-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			border-bottom:2px solid #609123;
+		}
+
+		.contact button:hover,
+		#head .newsletter button:hover,
+		.calltoaction a:hover {
+			background:#a5dc4f !important;
+		}
+
+		.contact button:active,
+		#head .newsletter button:active,
+		.calltoaction a:active {
+			background:#a5dc4f !important;
+			border-bottom-color:#7db535;
+		}
+
+		.hexagon {background:#a5dc4f;}
+		.hexagon:before {border-bottom-color: #a5dc4f}
+		.hexagon:after {border-top-color: #a5dc4f}
+
+		#pricing-table .popular h3 {
+			background-color:#a5dc4f;
+			background-image:-webkit-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-moz-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-ms-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-o-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:linear-gradient(top,#a5dc4f 0,#7db535 100%);
+		}
+
+		.social li a { background:#a5dc4f }
+
+		.testimonals aside a:hover,
+		.tweet_time a:hover,
+		.tweet_text a,
+		.copyright a:hover {
+			color:#7db535;
+		}
+{% endblock %}
+{% block yield %}
+	</style>
+	<!-- <script type="text/javascript">
+		$(function(){
+			initialize();
+		});
+	</script> -->
+
+        <script src="{{ MEDIA_URL }}assets/js/jquery-1.7.2.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+	<header id="head">
+
+		<div class="inner">
+			
+			{% block message %}
+			<a href="/" ><img src="{{ MEDIA_URL }}assets/img/flp/flplogo.png" alt="Forever Living Products" /></a> <br />
+			<a href="/" ><img src="{{ MEDIA_URL }}assets/img/flp/aloes.png" alt="Aloe Vera Forever" /></a>
+			<div class="details right">
+				<div class="message">
+					<p class="large">Dreams, Success, Health, Future</p>
+					<p class="medium">The best sources for health and beauty and sharing them with the world.</p>
+				</div>
+			</div>
+			{% endblock %}
+                        {% block menu %}
+                        <div class="menu right">
+				<div id="menuContainer">
+					<div class="menus">
+						<a href="/">Home</a> | <a href="/about">About</a> | <a href="/opportunity">Opportunity</a> | <a href="/benefits-of-aloe">Benefits of Aloe</a> | <a href="/forever-living-products">Products</a> | <a href="http://aloeveraofforever.com/blog">Blog</a> | <a href="/faqs">FAQs</a>
+					</div>
+                                </div>
+                        </div>
+                        <div class="menu share-right">
+                                <div id="shareContainer">
+                                        <div class="menus">					
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://aloeveraofforever.com" data-via="aloeveraofforever" data-related="arbinbulaybulay" data-hashtags="aloevera">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!-- Place this tag where you want the +1 button to render -->
+<g:plusone></g:plusone>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	po.src = 'https://apis.google.com/js/plusone.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<div class="fb-like" data-href="http://aloeveraofforever.com" data-send="true" data-width="450" data-show-faces="true"></div>
+                                      	
+				        </div>
+                              </div>
+			</div>
+                        {% endblock %}
+                        {% block newsletter %}
+			<div class="details left">
+				<!-- Newsletter -->
+				<form class="newsletter" id="subscribe" action="." method="post"> {% csrf_token %}
+					<input type="email" id="email" name="email" class="email" placeholder="Enter your email here" /> <button>Yes, update me.</button>
+					<p class="note">We only provide health products updates. We won't spam you.</p>
+				</form>
+			</div>
+			<div class="details qr-right">
+				<div class="message">
+					<a href="#" ><img src="{{ MEDIA_URL }}assets/img/flp/qrcode.aloeveraofforever.url.png" alt="Forever Natural Products" /></a>
+				</div>
+			</div>
+			{% endblock %}
+			
+		</div>
+
+		<div class="contact_map" id="contact">
+			<div id="canvas_holder" style="height:100%;width:100%">
+				<!-- <div id="map_canvas" style="height:100%;width:100%"></div> -->
+                                <div id="mapa" style="height:100%;width:100%"></div>
+				<script src="{{ MEDIA_URL }}assets/js/geolocalizaciongoogle.js"></script>
+			</div>
+		</div>
+
+	</header>
+
+	<section class="body">
+
+		<div class="inner">
+
+				<div id="extra">
+<div class="block">
+
+<div id="google_translate_element"></div><script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en'
+  }, 'google_translate_element');
+}
+</script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+
+					<div class="block">
+<p class="large"> AVF is Built with One Purpose in Mind: Providing You with The Right Product, Tools, Information and Support You Need to Achieve Your Health Goals.</p>
+						<h2 class="heading"><span class="left"><strong>Welcome to Aloe Vera of Forever!</strong></span></h2>
+						<p class="small">Aloe Vera of Forever is an independent distributor of Forever Living Products, the World's leading grower and processor of Aloe Vera available in over 190 countries worldwide. Produced from the inner gel of the leaf, cold processed and stabilized directly - not freeze dried and reconstituted. This ensures that none of the goodness is lost.
+You will find here excellent natural health and beauty products including moisturizers, lotions, toners. In addition we have drinks in various flavors, and a wide range of minerals, vitamins, and other supplements. We also have for household and for pets.</p>
+
+<p class="small">Forever Living is the only company that produces 100% pure Aloe or Sabila and the best variety which is Aloe Barbadensis (scientific name).   Try for yourself and discover the benefits of aloe vera, not only aloe vera for hair but for so many health benefits and general well being. </p>
+
+<p class="small"> AVF is a one-stop-shop for every one with one goal in mind. That is to get fit and healthy. We give tips and how tos, ingredients on our featured healthy menu and information on aloe vera products.</p>
+						
+						<h2 class="heading"><span class="left"><strong>Features</strong></span></h2>
+                                                <p class="small">Check out our informational and helpful programs for your great health.</p>
+						<ul class="features">
+							<li>
+								<div class="hexagon"><span class="time"></span></div>
+								<p>
+									<a href="/stories"><strong>Stories</strong></a>
+									
+								</p>
+							</li>
+                                                        <li>
+								<div class="hexagon"><span class="time"></span></div>
+								<p>
+									<a href="/weight-loss"><strong>Weight Loss Program</strong></a>
+									
+								</p>
+							</li>
+                                                        <li>
+								<div class="hexagon"><span class="draw"></span></div>
+								<p>
+									<a href="http://www.flponlinetraining.com/media/Forever_Living_Product_Manual/index.html" target="blank"><strong>Product Manual</strong></a>
+									
+								</p>
+							</li>
+							<li>
+								<div class="hexagon"><span class="stats"></span></div>
+								<p>
+									<a href="http://image.foreverliving.com/FLASH_AloeDrinks/OPEN.html"><strong>Aloe Vera Drinks Video</strong></a>
+									
+								</p>
+							</li>
+                                                        <li>
+								<div class="hexagon"><span class="comments"></span></div>
+								<p>
+									<a href="http://www.flponlinetraining.com/downloads/topTenProducts/index.html" target="blank"><strong>Top 10 Products</strong></a>
+								</p>
+							</li>
+                                                </ul>
+                                                <h2 class="heading"><span class="left"><strong>Apps</strong></span></h2>
+                                                <p class="small">Calculator Apps on AVF can help you calculate your weight loss progress, food calories and your body mass index for better health status.</p>
+                                                <ul class="features">
+							
+							<li>
+								<div class="hexagon"><span class="stats"></span></div>
+								<p>
+									<a href="/body-mass-index"><strong>BMI</strong></a>
+									
+								</p>
+							</li>
+                                                        <li>
+								<div class="hexagon"><span class="stats"></span></div>
+								<p>
+									<a href="/basal-metabolic-rate"><strong>BMR</strong></a>
+									
+								</p>
+							</li>
+                                                        <li>
+								<div class="hexagon"><span class="stats"></span></div>
+								<p>
+									<a href="/calorie-counter"><strong>Calorie Counter</strong></a>
+									
+								</p>
+							</li>
+                                                        <li>
+								<div class="hexagon"><span class="stats"></span></div>
+								<p>
+									<a href="/how-many-calories-will-i-burn"><strong>Calories Burned</strong></a>
+									
+								</p>
+							</li>
+                                                        
+                                                        <li>
+								<div class="hexagon"><span class="stats"></span></div>
+								<p>
+									<a href="/calorie-burned-for-running"><strong>Calories Burned for Running</strong></a>
+									
+								</p>
+							</li>
+							<li>
+								<div class="hexagon"><span class="stats"></span></div>
+								<p>
+									<a href="/cost-of-smoking"><strong>Cost of Smoking</strong></a>
+									
+								</p>
+							</li>
+<li>
+								<div class="hexagon"><span class="stats"></span></div>
+								<p>
+									<a href="/pregnancy-gestational-diabetes-diet-calculator"><strong>Pregnancy Diabetes</strong></a>
+									
+								</p>
+							</li>
+<li>
+								<div class="hexagon"><span class="stats"></span></div>
+								<p>
+									<a href="/ww-food-points"><strong>WW Food Points</strong></a>
+									
+								</p>
+							</li>
+							
+						</ul>
+                                                <!-- <center>						
+								<a href="https://www.foreverliving.com/retail/shop/shopping.do?task=viewProductDetail&itemCode=376&langID=en&storeID=USA&distribID=630000004130"><img src="https://gallery.foreverliving.com/gallery/FLP/image/Marketing/Billboards/ArcticSea_billboard.jpg" title="Featured Products"  /></a>						
+						</center> -->
+					</div>
+                                        <div class="block">
+					<p class="large">Join Now FREE! As an Independent Distributor and Buy Aloe Vera Products at Wholesale Rates!</p>
+					<h3>We offer YOU Financial Freedom with Aloe Vera and Forever Living Products!</h3>
+<p class="small">For over 10 million distributors around the world, Forever Living Products unparalleled business opportunity means a better choice.. And whether you are interested in an additional $300-$10000 per month to help cover the bills or thousands of dollars a month to change your life, it is possible through Aloe Vera & Forever Living Products.<br>
+
+Ask yourself, how much more does you want to earn per month?<br>
+
+Ask yourself what you want in life. Money? Recognition? Travel? Cars? More time with family? Education? Freedom? Independency?<br>
+You can make it happen with Forever Living Products! Join Forever Living Products for free as an Independent Distributor and buy Aloe Vera products at wholesale rates! </p>
+                                        </div>
+					<div class="block">
+						<h2 class="heading"><span class="center"><strong>Click Here The Country of Your Residence</strong></span></h2>
+						<ul class="gallery">
+							<li><a href="https://www.foreverliving.com/marketing/Join.do?store=CAN&amp;language=en&amp;distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Canada-01.png" alt="Forever Living Products Canada" /></a></li>
+							<li><a href="https://www.foreverliving.com/marketing/Join.do?store=BEL&amp;language=en&amp;distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Belgium-01.png" alt="Forever Living Products Belgium" /></a></li>
+							<li><a href="https://www.foreverliving.com/marketing/Join.do?store=LUX&amp;language=fr&amp;distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Luxembourg-01.png" alt="Forever Living Products Luxembourg" /></a></li>
+							<li><a href="https://www.foreverliving.com/marketing/Join.do?store=AUS&amp;language=en&amp;distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Australia-01.png" alt="Forever Living Products Australia" /></a></li>
+							<li><a href="https://www.foreverliving.com/marketing/Join.do?store=USA&amp;language=en&amp;distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/United%20States-01.png" alt="Forever Living Products USA" /></a></li>
+							<li><a href="https://www.foreverliving.com/marketing/Join.do?store=NLD&amp;language=nl&amp;distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Netherlands-01.png" alt="Forever Living Products Netherlands" /></a></li>
+							<li><a href="https://www.foreverliving.com/marketing/Join.do?store=PRT&amp;language=pt&amp;distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Portugal-01.png" alt="Forever Living Products Portugal" /></a></li>
+							<li><a href="https://www.foreverliving.com/marketing/Join.do?store=GRC&amp;language=el&amp;distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Greece-01.png" alt="Forever Living Products Greece" /></a></li>
+							<li><a href="https://www.foreverliving.com/marketing/Join.do?store=CZE&amp;language=cs&amp;distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/CZECH_REPUBLIC.jpg" alt="Forever Living Products Czech Republic" /></a></li>
+							<li><a href="https://www.foreverliving.com/marketing/Join.do?store=SVK&amp;language=sk&amp;distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/slovakia.jpg" alt="Forever Living Products Slovakia" /></a></li>
+							<li><a href="https://www.foreverliving.com/marketing/Join.do?store=ESP&amp;language=es&amp;distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/spain.jpg" alt="Forever Living Products Spain" /></a></li>
+							<li><a href="https://www.foreverliving.com/marketing/Join.do?store=PHL&amp;distribID=630000004130&amp;language=en"><img src="{{ MEDIA_URL }}assets/img/flp/philippines.jpg" alt="Forever Living Products Philippines" /></a></li>
+						</ul>						
+					</div>
+					<div class="block">
+						<h2 class="heading"><span class="center"><strong>Join Through Your Mobile Phone</strong></span></h2>
+							<img src="{{ MEDIA_URL }}assets/img/flp_mobile_join.png" alt="Forever Living Products Mobile" />
+							<p class="medium">Scan the QR code using your scanner</p>
+					</div>
+					<div class="block">
+						<h2 class="heading"><span class="right"><strong>Testimonials</strong></span></h2>
+						<ul class="testimonals">
+							<li>
+								<p>
+									After I had my operation, I was taking Aloe Vera and I also used the gelly to heal wounds. Great! my recovery went fast!
+								</p>
+								<aside><span>Excellent</span> <a href="#">Basilisa</a>, Philippines</aside>
+							</li>
+							<li>
+								<p>
+									Aloe Vera Gel makes me feel generally well-being. I have never been to the doctor since I started drinking Aloe Vera.
+								</p>
+								<aside><span>Superb</span> <a href="#">Sam</a>, Canada</aside>
+							</li>
+							<li>
+								<p>
+									Aloe vera gives a feeling of general well being.
+								</p>
+								<aside><span>Fantastic</span> <a href="#">Danny</a>, Australia</aside>
+							</li>
+						</ul>
+					</div>
+                                        <div class="block">
+                                            <ul class="testimonals">
+						<li> <div class="fb-like-box" data-href="https://www.facebook.com/pages/Aloeveraofforever/307189806076930" data-width="292" data-show-faces="true" data-header="true" data-stream="true" data-show-border="false"></div>
+					        </li>
+						
+						<li><div class="fb-comments" data-href="http://aloeveraofforever.com" data-width="470" data-num-posts="10"></div> </li>
+					        
+				            </ul>
+                                        </div>
+				</div>
+{% endblock %}

@@ -1,0 +1,220 @@
+{% extends "base.html" %}
+{% block title %}<title>Aloe Vera of Forever Living Products</title>{% endblock %}
+{% block style %}
+
+	<style>
+
+		#head  {
+			background:url('{{ MEDIA_URL }}assets/img/slider/3.jpg');
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		#progress-bar {background:#a5dc4f}
+
+		.contact button,
+		#head .newsletter button,
+		.calltoaction a {
+			background-color:#a5dc4f;
+			background-image:-webkit-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-moz-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-ms-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-o-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			border-bottom:2px solid #609123;
+		}
+
+		.contact button:hover,
+		#head .newsletter button:hover,
+		.calltoaction a:hover {
+			background:#a5dc4f !important;
+		}
+
+		.contact button:active,
+		#head .newsletter button:active,
+		.calltoaction a:active {
+			background:#a5dc4f !important;
+			border-bottom-color:#7db535;
+		}
+
+		.hexagon {background:#a5dc4f;}
+		.hexagon:before {border-bottom-color: #a5dc4f}
+		.hexagon:after {border-top-color: #a5dc4f}
+
+		#pricing-table .popular h3 {
+			background-color:#a5dc4f;
+			background-image:-webkit-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-moz-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-ms-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-o-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:linear-gradient(top,#a5dc4f 0,#7db535 100%);
+		}
+
+		.social li a { background:#a5dc4f }
+
+		.testimonals aside a:hover,
+		.tweet_time a:hover,
+		.tweet_text a,
+		.copyright a:hover {
+			color:#7db535;
+		}
+{% endblock %}
+{% block yield %}
+
+	</style>
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<header id="head">
+
+		<div class="inner">
+		{% block message %}
+			<a href="/" ><img src="{{ MEDIA_URL }}assets/img/flp/flplogo.png" /></a> <br />
+			
+			<div class="menu right">
+				<div id="menuContainer">
+					<div class="menus">
+						<a href="/">Home</a> | <a href="/about">About</a> | <a href="/opportunity">Opportunity</a> | <a href="/benefits-of-aloe">Benefits of Aloe</a> | <a href="/forever-living-products">Products</a> | <a href="http://aloeveraofforever.com/blog">Blog</a> | <a href="/faqs">FAQs</a>
+					</div>
+                                </div>
+                        </div>
+                        <div class="menu share-right">
+                                <div id="shareContainer">
+                                        <div class="menus">					
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://aloeveraofforever.com" data-via="aloeveraofforever" data-related="arbinbulaybulay" data-hashtags="aloevera">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!-- Place this tag where you want the +1 button to render -->
+<g:plusone></g:plusone>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	po.src = 'https://apis.google.com/js/plusone.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<div class="fb-like" data-href="http://aloeveraofforever.com" data-send="true" data-width="450" data-show-faces="true"></div>
+                                      	
+				        </div>
+                              </div>
+			</div>
+		{% endblock %}
+		</div>
+
+		<!-- <div id="progress-back" class="load-item"><div id="progress-bar"></div></div> -->
+		<!-- <div id="countdown"></div> -->
+		<!-- <div class="contact_map" id="contact_map"></div> -->
+
+	</header>
+
+	<section class="body">
+
+		<div class="inner">
+
+				<div id="extra">
+                                        <div class="block">
+						<h2 class="heading"><span class="center"><strong>Click Here the Country of your Residence to Shop</strong></span></h2>
+						<ul class="gallery">
+					<li><a href="https://www.foreverliving.com/retail/entry/Shop.do?store=USA&language=en&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/United States-01.png" title="United States"></a></li>		
+					<li><a href="https://www.foreverliving.com/retail/entry/Shop.do?store=AUS&language=en&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Australia-01.png" title="Australia"></a></li>
+					<li><a href="https://www.foreverliving.com/retail/entry/Shop.do?store=BEL&language=nl&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Belgium-01.png" title="Belgium"></a></li>
+					<li><a href="https://www.foreverliving.com/retail/entry/Shop.do?store=CAN&language=en&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Canada-01.png" title="Canada"></a></li>
+
+					<li><a href="https://www.foreverliving.com/retail/entry/Shop.do?store=CZE&language=cs&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/CZECH_REPUBLIC.jpg" title="Czech Republic"></a></li>
+					<li><a href="https://www.foreverliving.com/retail/entry/Shop.do?store=GRC&language=el&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Greece-01.png" title="Greece"></a></li>
+					<li><a href="https://www.foreverliving.com/retail/entry/Shop.do?store=IRL&language=en&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/ireland.jpg" title="Ireland"></a></li>
+					<li><a href="https://www.foreverliving.com/retail/entry/Shop.do?store=LUX&language=de&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Luxembourg-01.png" title="Luxembourg"></a></li>
+					<li><a href="https://www.foreverliving.com/retail/entry/Shop.do?store=NLD&language=nl&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Netherlands-01.png" title="Netherlands"></a></li>
+					<li><a href="https://www.foreverliving.com/retail/entry/Shop.do?store=NZL&language=en&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/new_zealand.jpg" title="New Zealand"></a></li>
+
+					<li><a href="https://www.foreverliving.com/retail/entry/Shop.do?store=ILN&language=en&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/northern_ireland.jpg" title="Northern Ireland"></a></li>
+					<li><a href="https://www.foreverliving.com/retail/entry/Shop.do?store=PHL&language=en&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/philippines.jpg" title="Philippines"></a></li>
+					<li><a href="https://www.foreverliving.com/retail/entry/Shop.do?store=PRT&language=pt&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Portugal-01.png" title="Portugal"></a></li>
+					<li><a href="https://www.foreverliving.com/retail/entry/Shop.do?store=SVK&language=sk&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/slovakia.jpg" title="Slovakia"></a></li>
+					<li><a href="https://www.foreverliving.com/retail/entry/Shop.do?store=ZAF&language=es&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/south_africa.jpg" title="South Africa"></a></li>
+					<li><a href="https://www.foreverliving.com/retail/entry/Shop.do?store=ESP&language=es&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/spain.jpg" title="Spain"></a></li>
+					<li><a href="https://www.foreverliving.com/retail/entry/Shop.do?store=GBR&language=en&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/united_kingdom.jpg" title="United Kingdom"></a></li>
+						</ul>
+					</div>
+
+					<div class="block">
+						<h2 class="heading"><span class="center"><strong>Natural Aloe Vera Wellness Products</strong></span></h2>
+						<p class="small">
+							Forever Living Products are the World's leading grower and processor of Aloe Vera. Produce Satisfaction Guaranteed from the inner gel of the leaf, cold processed and stabilized directly - not freeze dried and reconstituted. This ensures that none of the goodness is lost.
+
+In the range you will find excellent natural health and beauty products including moisturizers, lotions, toners. In addition we have drinks in various flavors, and a wide range of minerals, vitamins, and other supplements.
+
+All items are high quality, aloe vera gel is the primary ingredient, not just a splash. Backed by a 60 day money back satisfaction guarantee you will not be disappointed. 
+						</p>						
+					</div>
+					
+					<div class="block">
+						<h2 class="heading"><span class="center"><strong>Clean Shopping Cart</strong></span></h2>
+						<p class="medium">DRINKS</p>
+						<p class="small">
+							<a href="https://www.foreverliving.com/retail/shop/shopping.do?categoryName=Drinks+R&task=shopCategory&langID=en&storeID=USA&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Drinks.jpg" /></a>
+							Enjoy the benefits of aloe vera in four healthy varieties of fresh, stabilized aloe vera gel. The primary ingredient of all four varieties is raw aloe vera gel, which provides a rich supplement to healthy nutrition. Drink any one of these on a daily basis to assist digestion and absorption of nutrients, to add vitamins, minerals and amino acids to your diet, and above all, to promote a good, healthy lifestyle.</p>				
+						<p class="medium">NUTRITION</p>
+						<p class="small">
+							<a href="https://www.foreverliving.com/retail/shop/shopping.do?categoryName=Nutrition+R&task=shopCategory&langID=en&storeID=USA&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Nutrition.jpg" /></a>
+							Good health starts with good nutrition. With today's farming methods depleting the natural mineral content of our lands, we can no longer rely on our foods to completely provide us with the essential vitamins and minerals that our bodies need. More people are turning to nutritional supplements as a means of getting sufficient quantities of those vital nutrients that can make a difference to their quality of health. Our nutritional supplement products are made from the finest ingredients, grown or collected from the best sources and produced with the most advanced technology. Each product retains its original nutritional value, encouraging both good health and peace of mind.</p>		
+						<p class="medium">BEE PRODUCTS</p>
+						<p class="small">
+							<a href="https://www.foreverliving.com/retail/shop/shopping.do?categoryName=Bee+Products+R&task=shopCategory&langID=en&storeID=USA&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Bee_Products.jpg" /></a>
+							Forever Living Products offers you a remarkable line of 100% natural bee products. Our beehives are located in an ideal environment - the high desert regions of Arizona - where the pristine environment eliminates contaminants such as pesticides and pollutants. We use state-of-the-art, specially designed equipment to gather and preserve the ingredients in the conditions nature intended. All of our bee products are natural and nutritionally rich, from the hives directly to you, just as honeybees have been making them for thousands of years.</p>						<p class="medium">WEIGHT MANAGEMENT</p>
+						<p class="small">
+							<a href="https://www.foreverliving.com/retail/shop/shopping.do?categoryName=Weight+Management+R&task=shopCategory&langID=en&storeID=USA&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Weight_Management.jpg" /></a>
+							Today, more people than ever are conscious of their weight and living a healthy lifestyle. What would you consider to be the ideal diet? It should taste good, be easy to follow, boost energy levels, and of course, keep the pounds off. Good news! Our weight management products assists you in doing that and more. Let our Forever Lean and Forever Lite help you reach your weight management goal!</p>	
+						<p class="medium">PERSONAL CARE</p>
+						<p class="small">
+							<a href="https://www.foreverliving.com/retail/shop/shopping.do?categoryName=Personal+Care+R&task=shopCategory&langID=en&storeID=USA&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Personal_Care.jpg" /></a>
+							Forever Living Products has combined all the benefits of aloe vera gel with the finest quality ingredients to offer you a range of natural personal care products that are second to none. From head to toe, our products have you covered with pure, stabilized Aloe Vera. From lotions and gels to shampoos and cleansers, look and feel your best with our complete Personal Care line!</p>
+						
+						<p class="medium">SKIN CARE</p>
+						<p class="small">
+							<a href="https://www.foreverliving.com/retail/shop/shopping.do?categoryName=Skin+Care+R&task=shopCategory&langID=en&storeID=USA&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Skin_Care.jpg" /></a>
+							Our skin is the front line defense in our daily fight against pollution and other environmental irritants, so we need to protect and reinforce it with extra care. Aloe vera, whose most traditional use as a natural remedy is to soothe the skin, is an ideal defense. We have designed unique and varied products that work naturally by moisturizing and providing essential nutrients and vitamins to the skin. Our skin care products can help protect the skin against the environment&#8217;s harsh effects, and are reinforced with the International Aloe Science Council Seal of Approval. Our nutritional supplement products are made from the finest ingredients, grown or collected from the best sources and produced with the most advanced technology. Each product retains its original nutritional value, encouraging both good health and peace of mind.</p>							
+						<p class="medium">COMBO PACKS</p>
+						<p class="small">
+							<a href="https://www.foreverliving.com/retail/shop/shopping.do?categoryName=ComboPaksR&task=shopCategory&langID=en&storeID=USA&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Combo_Paks.jpg" /></a>
+							A massive savings off the individual retail prices, each of our Combo Paks are a great introduction to the quality products of Forever Living. Contents are subject to change.</p>	
+						<p class="medium">SONYA SKIN CARE</p>
+						<p class="small">
+							<a href="https://www.foreverliving.com/retail/shop/shopping.do?categoryName=Sonya+Skin+Care+R&task=shopCategory&langID=en&storeID=USA&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Sonya_Skin_Care.jpg" /></a>
+							Sonya&#174; is the essence of more than just beauty: it is an expression of rejuvenation, admiration, and love. Our collection&#8217;s formulation of ingredients including aloe vera, fruit extracts, white tea and superior moisturizers give back to your skin. They help to rejuvenate and moisturize your skin like never before.</p>
+						<p class="medium">SONYA COSMETICS</p>
+						<p class="small">
+							<a href="https://www.foreverliving.com/retail/shop/shopping.do?categoryName=Cosmetics+R&task=shopCategory&langID=en&storeID=USA&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Cosmetics.jpg" /></a>
+							At Forever, beauty is more than skin deep&#8230; in fact, it&#8217;s real deep! The Sonya Colour Collection is one of the only aloe vera-based cosmetic lines in the world that delivers skin care and makeup in one. Sonya&#8217;s unique combination of natural ingredients, from pure aloe vera and antioxidant vitamins, to marine extracts and chamomile, can help protect, nourish and soothe the skin. This magnificent collection celebrates the rich colors of life with hues for every skin tone and every mood, and has a versatility that allows you to easily take your look from day to night. Let Sonya help you take the guesswork out of looking beautiful!</p>
+						<p class="medium">LITERATURE</p>
+						<p class="small">
+							<a href="https://www.foreverliving.com/retail/shop/shopping.do?categoryName=Literature+%26+Accessories+R&task=shopCategory&langID=en&storeID=USA&distribID=630000004130"><img src="{{ MEDIA_URL }}assets/img/flp/Literature.jpg" /></a>
+							A bunch of brochures and literatures</p>							
+					</div>
+					<div class="block">
+						<h2 class="heading"><span class="center"><strong>Categories</strong></span></h2>
+						<ul>
+							<li><a href="https://www.foreverliving.com/retail/entry/Category.do?name=Drinks*&distribID=630000004130&storeID=USA">Drinks</a></li>
+							<li><a href="https://www.foreverliving.com/retail/entry/Category.do?name=Nutrition+R&distribID=630000004130&storeID=USA">Nutrition</a></li>
+							<li><a href="https://www.foreverliving.com/retail/entry/Category.do?name=Forever_Weight_Care_r&distribID=630000004130&storeID=USA">Weight Management</a></li>
+							<li><a href="https://www.foreverliving.com/retail/entry/Category.do?name=Bee+Products*&distribID=630000004130&storeID=USA">Bee Products</a></li>
+							<li><a href="https://www.foreverliving.com/retail/entry/Category.do?name=Personal+Care+R&distribID=630000004130&storeID=USA">Personal Care</a></li>
+							<li><a href="https://www.foreverliving.com/retail/entry/Category.do?name=ComboPaksR&distribID=630000004130&storeID=USA">Combo Packs</a></li>
+							<li><a href="https://www.foreverliving.com/retail/entry/Category.do?name=Cosmetics+R&distribID=630000004130&storeID=USA">Sonya Cosmetics</a></li>
+							<li><a href="https://www.foreverliving.com/retail/entry/Category.do?name=Skincare*&distribID=630000004130&storeID=USA">Skin Care</a></li>
+							<li><a href="https://www.foreverliving.com/retail/entry/Category.do?name=Skincare+Collection*&distribID=630000004130&storeID=USA">Sonya Skin Care</a></li>													
+						</ul>
+					</div>
+				</div>
+
+{% endblock %}

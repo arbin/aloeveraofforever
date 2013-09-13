@@ -1,0 +1,143 @@
+{% extends "inside-base.html" %}
+{% block title %}<title>Aloe Vera of Forever Living Products | Calories Burned Calculator</title>{% endblock %}
+{% block style %}
+	<style>
+
+		#head  {
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		#progress-bar {background:#a5dc4f}
+
+		.contact button,
+		#head .newsletter button,
+		.calltoaction a {
+			background-color:#a5dc4f;
+			background-image:-webkit-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-moz-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-ms-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-o-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			border-bottom:2px solid #609123;
+		}
+
+		.contact button:hover,
+		#head .newsletter button:hover,
+		.calltoaction a:hover {
+			background:#a5dc4f !important;
+		}
+
+		.contact button:active,
+		#head .newsletter button:active,
+		.calltoaction a:active {
+			background:#a5dc4f !important;
+			border-bottom-color:#7db535;
+		}
+
+		.hexagon {background:#a5dc4f;}
+		.hexagon:before {border-bottom-color: #a5dc4f}
+		.hexagon:after {border-top-color: #a5dc4f}
+
+		#pricing-table .popular h3 {
+			background-color:#a5dc4f;
+			background-image:-webkit-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-moz-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-ms-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-o-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:linear-gradient(top,#a5dc4f 0,#7db535 100%);
+		}
+
+		.social li a { background:#a5dc4f }
+
+		.testimonals aside a:hover,
+		.tweet_time a:hover,
+		.tweet_text a,
+		.copyright a:hover {
+			color:#7db535;
+		}
+
+{% endblock %}
+{% block yield %}
+	</style>
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<header id="head">
+
+		<div class="inner">
+		{% block message %}
+			<a href="/" ><img src="{{ MEDIA_URL }}assets/img/flp/flplogo.png" /></a> <br />
+			
+			<div class="menu right">
+				<div id="menuContainer">
+					<div class="menus">
+						<a href="/">Home</a> | <a href="/about">About</a> | <a href="/opportunity">Opportunity</a> | <a href="/benefits-of-aloe">Benefits of Aloe</a> | <a href="/forever-living-products">Products</a> | <a href="http://aloeveraofforever.com/blog">Blog</a> | <a href="/faqs">FAQs</a>
+					</div>
+				</div>
+			</div>
+                        <div class="menu share-right">
+                                <div id="shareContainer">
+                                        <div class="menus">					
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://aloeveraofforever.com/calorie-burned-for-running" data-via="aloeveraofforever" data-related="arbinbulaybulay" data-hashtags="aloevera">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!-- Place this tag where you want the +1 button to render -->
+<g:plusone></g:plusone>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	po.src = 'https://apis.google.com/js/plusone.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<div class="fb-like" data-href="http://aloeveraofforever.com/calorie-burned-for-running" data-send="true" data-width="450" data-show-faces="true"></div>
+                                      	
+				        </div>
+                              </div>
+			</div>
+		{% endblock %}
+		</div>
+
+		<!-- <div id="progress-back" class="load-item"><div id="progress-bar"></div></div> -->
+		<!-- <div id="countdown"></div> -->
+		<!-- <div class="contact_map" id="contact_map"></div> -->
+
+	</header>
+
+	<section class="body">
+
+		<div class="inner">
+
+				<div id="extra">
+					
+					<div class="block">
+						<h2 class="heading"><span class="left"><strong>Calories Burned for Running Calculator</strong></span></h2>
+						<p class = "small">  Figure out ACCURATEY how many calories your burning while Jogging.. </p>
+						
+						<p class="medium"> {{ calorieburn }} </p>
+						<form class="contact" id="contact" action="#" method="post"> {% csrf_token %}
+							<div class="form">
+								
+								<input type="text" name="weight" placeholder="Enter your weight in pounds" id="contactname" />
+								<input type="text" name="miles" placeholder="Enter miles run (1 km = 0.621371 mile)." id="contactemail" />
+								<button>Calculate</button>
+							</div>
+						</form>
+						
+					</div>
+					
+					
+				</div>
+
+{% endblock %}

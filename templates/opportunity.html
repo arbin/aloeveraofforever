@@ -1,0 +1,306 @@
+{% extends "base.html" %}
+{% block title %}<title>Aloe Vera of Forever Living Products | Opportunity</title>{% endblock %}
+{% block style %}
+	<style>
+
+		#head  {
+			background:url('{{ MEDIA_URL }}assets/img/slider/9.png');
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		#progress-bar {background:#a5dc4f}
+
+		.contact button,
+		#head .newsletter button,
+		.calltoaction a {
+			background-color:#a5dc4f;
+			background-image:-webkit-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-moz-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-ms-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-o-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			border-bottom:2px solid #609123;
+		}
+
+		.contact button:hover,
+		#head .newsletter button:hover,
+		.calltoaction a:hover {
+			background:#a5dc4f !important;
+		}
+
+		.contact button:active,
+		#head .newsletter button:active,
+		.calltoaction a:active {
+			background:#a5dc4f !important;
+			border-bottom-color:#7db535;
+		}
+
+		.hexagon {background:#a5dc4f;}
+		.hexagon:before {border-bottom-color: #a5dc4f}
+		.hexagon:after {border-top-color: #a5dc4f}
+
+		#pricing-table .popular h3 {
+			background-color:#a5dc4f;
+			background-image:-webkit-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-moz-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-ms-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-o-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:linear-gradient(top,#a5dc4f 0,#7db535 100%);
+		}
+
+		.social li a { background:#a5dc4f }
+
+		.testimonals aside a:hover,
+		.tweet_time a:hover,
+		.tweet_text a,
+		.copyright a:hover {
+			color:#7db535;
+		}
+
+{% endblock %}
+{% block yield %}
+	</style>
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<header id="head">
+
+		<div class="inner">
+		{% block message %}
+			<a href="/" ><img src="{{ MEDIA_URL }}assets/img/flp/flplogo.png" /></a> <br />			
+			<div class="menu right">
+				<div id="menuContainer">
+					<div class="menus">
+						<a href="/">Home</a> | <a href="/about">About</a> | <a href="/opportunity">Opportunity</a> | <a href="/benefits-of-aloe">Benefits of Aloe</a> | <a href="/forever-living-products">Products</a> | <a href="http://aloeveraofforever.com/blog">Blog</a> | <a href="/faqs">FAQs</a>
+					</div>
+                                </div>
+                        </div>
+                        <div class="menu share-right">
+                                <div id="shareContainer">
+                                        <div class="menus">					
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://aloeveraofforever.com" data-via="aloeveraofforever" data-related="arbinbulaybulay" data-hashtags="aloevera">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!-- Place this tag where you want the +1 button to render -->
+<g:plusone></g:plusone>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	po.src = 'https://apis.google.com/js/plusone.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<div class="fb-like" data-href="http://aloeveraofforever.com" data-send="true" data-width="450" data-show-faces="true"></div>
+                                      	
+				        </div>
+                              </div>
+			</div>
+		{% endblock %}
+		</div>
+
+		<!-- <div id="progress-back" class="load-item"><div id="progress-bar"></div></div> -->
+		<!-- <div id="countdown"></div> -->
+		<!-- <div class="contact_map" id="contact_map"></div> -->
+
+	</header>
+
+	<section class="body">
+
+		<div class="inner">
+
+				<div id="extra">
+
+					<div class="block">
+						<h2 class="heading"><span class="left"><strong>Your Future Starts Today</strong></span></h2>
+						<p class="small">Starting your very own home-based
+							business is easy. Forever Living Products ensures your success every
+							step of the way. There&#8217;s <strong>no membership fee or expensive investment</strong>.
+							You&#8217;ll get instant access to our absolutely amazing products at their
+							discounted prices. When it comes to training materials, a success plan,
+							and your commissions, we provide all of that. All you need to provide
+							is a commitment to your future and your enthusiasm. You can&#8217;t lose! </h4><br><br>
+							<a href="https://www.foreverliving.com/marketing/Join.do?store=USA&amp;language=en&amp;distribID=630000004130" target="_blank">Click Here</a><h4> to start your future today!
+						</p>
+					</div>
+					
+					<div class="block">
+						
+						<p class="small">
+							<a href="https://www.foreverliving.com/marketing/Join.do?store=USA&amp;language=en&amp;distribID=630000004130" target="_blank">Join Now</a></h1></center>
+							<br><a href="https://www.foreverliving.com/marketing/Join.do?store=USA&amp;language=en&amp;distribID=630000004130" target="_blank">Enroll now</a> <h4>with Forever Living Products to take advantage of &#8220;The Greatest Opportunity on Earth.&#8221; It&#8217;s risk free&#8212;<strong>no membership fee, no monthly fee, and no obligations to buy</strong>.
+							You&#8217;ll have access to amazing products, and a life-changing opportunity
+							to give you a future of security, wellness, and wealth.</p>	
+
+<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/X6rMR9bmOYE&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/X6rMR9bmOYE&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>							
+					</div>
+					
+					<div class="block">
+						<h2 class="heading"><span class="left"><strong>HOW TO BECOME A FOREVER LIVING PRODUCTS DISTRIBUTOR?</strong></span></h2>
+						<p class="small">To become a Forever Living Products distributor the only thing you have to do is fill out an application form. It is absolutely FREE, no membership FEE, no registration FEE, no set up FEE and no hidden FEE so there is no obligation. There is nothing to lose to become a forever living products distributor.<br>
+Click above to fill out the official Forever Living Products distributor registration form.(You will need my sponsor id to get registered: 6300000041305, Arbin Bulaybulay).<br>
+It takes about 3 minutes to complete the form and after 15 minutes you will receive your distributor number and password by email, in two weeks you will receive your card by mail. The minimum purchase is $50. You don't have social security number? Don't worry, just leave the box empty.<br>
+If you need help with the process please contact me and I'll go through with you.
+As soon as you have your id number you can login to your account and start shopping at a distributor price (15%).
+If you want to start your own business please contact me and I'll help you to get started.</p>
+					</div>
+					<div class="block">
+						<h2 class="heading"><span class="left"><strong>How to receive 15% discount with Forever Living Products discount card?</strong></span></h2>
+
+						<p class="small">You can register above to receive a forever living products discount card (distributor card) which means you can buy the products at a new distributor price. You can save 15% right away. Fill out the application form (you will need my sponsor id to get registered: 6300000041305, Arbin Bulaybulay) and in 15 minutes you will receive your id number and password. There is no obligation, you don't have to sell the products, you just buy them for yourself to save some money. Application is free, there is nothing to lose. Who doesn't want to save money? The only requirement is that every time you shop you have to spend at least $50 on products. The forever living products discount card is valid for the rest of your life. You don't need to renew it, even if you shop only once a year. With forever living products discount card you can enjoy shopping and save money forever. You don't need to have a social security number to register, you just leave the field empty if you don't have one. About 2 weeks after registration you will receive your forever living discount card by mail, it will contain your sponsor's name (my name: Arbin Bulaybulay), my number, your name and id number. You will also receive the W-8 form, it is the company's policy to send it to everybody after registration. If you are planning to make money with Forever Living Products, fill it out and send it back. If you are just planning to buy the products at discounted price and will not sell it, in that case you just ignore this letter.
+						</p>						
+					</div>
+					
+					<div class="block">
+						<h2 class="heading"><span class="left"><strong>Let see an example in USA</strong></span></h2>
+						<p class="small">1 bottle of aloe vera gel is $16.95,
+							with forever living products discount card you can get it for:$14.41
+							$2.54 savings right away. Because the minimum purchase is $50 so let see an other example:
+							4 aloe vera gel at regular price is: $67.80 + shipping
+							with forever living products discount card you can get it:
+							4 aloe vera gel at discounted price is: $57.64 + shipping
+							THAT IS A $10.16 SAVINGS ON 4 BOTTLE OF ALOE VERA GEL
+							IF YOU BUY 8 BOTTLES OF ALOE VERA GEL YOU CAN SAVE $20.32 !!!
+						</p>						
+					</div>
+					
+					<div class="block">
+						<h2 class="heading"><span class="left"><strong>How to shop with Forever Living Products Discount Card?</strong></span></h2>
+						<p class="small">15 minutes after registration check your email. Write down your id number and password!
+To buy the products 15% cheaper with your Forever Living Discount Card, you need to login to your account at www.foreverliving.com , on the right upper corner you will see: distributor login, choose North America and United States (or where you live), type in your id number which should start like 001002xxxxxx, and password 00000xxxxx. After login you need to set up your preferences (language etc.) To buy the products you need to click 'shop now' and you can enjoy the discounted price!
+						</p>
+						<a href="https://www.foreverliving.com/marketing/Join.do?store=USA&amp;language=en&amp;distribID=630000004130" target="_blank"><img src="https://gallery.foreverliving.com/gallery/FLP/image/Marketing/Join_Now.jpg" width="500" height="376"></a>
+					</div>
+					
+					<div class="block">
+						<p class="medium">"One
+							of the greatest sources of illness in the world is an empty wallet; if
+							you want to decrease the number of people suffering, just give them a
+							chance to earn an honest living!&#8221;<br><img style="width: 62px; height: 73px;" src="https://gallery.foreverliving.com/gallery/FLP/image/Marketing/Rex_Head.jpg"><br><span style="font-size: small;"><span style="color: rgb(128, 128, 0);">Rex Maughan</span></span><span style="font-size: x-small;"><span style="color: rgb(128, 128, 0);"><br>Chairman of the Board <br>&amp; <br>Chief Executive Officer</span>
+						</p>						
+					</div>					
+				</div>
+				<div id="extra">
+					<div class="block">
+						<h2 class="heading"><span class="left"><strong>Own a Home-Based Business with Little Risk and Unlimited Potential for Wealth</strong></span></h2>
+						<p class="small">
+							Forever Living Products is structured as a multi-level marketing							
+							company,&nbsp;otherwise referred to as an 'MLM.' This structure is
+							designed to let you be our marketing and sales force. Instead of
+							spending thousands of dollars in standard advertising methods, we pay
+							you to share Forever Living Products with others. This MLM structure
+							offers you many benefits that traditional businesses can&#8217;t match. </p>
+						<p class="medium">Own your own business</p>
+							<p class="small">You are in charge of your own destiny. Instead of making your boss
+							rich, all the work you do actually benefits you. You&#8217;ll enjoy the
+							freedom and flexibility of owning your business&#8212;not to mention
+							excellent tax benefits.
+							<img alt="Multi-level marketing network" src="https://gallery.foreverliving.com/gallery/FLP/image/Marketing/MLM3.jpg" width="500" height="375"></p>
+							<h2>Little risk and no overhead costs.</h2><br>
+							<p class="small">Traditional
+							brick-and-mortar businesses cost tens of thousands of dollars to
+							establish, not to mention a bank loan that will take you decades to
+							repay. Starting your home-based business with Forever Living only costs
+							you a few hundred dollars. You don&#8217;t have to hire employees. You don&#8217;t
+							have to offer benefits. You don&#8217;t have any overhead costs. It is
+							finally possible for you to own your own business.
+							No salary cap.
+							Corporate
+							jobs limit your pay range based on a market standard. With Forever
+							Living, there is no cap on how much you earn. The harder you work, the
+							more money you make.
+							Residual Income. Perhaps the
+							greatest benefit that our multi-level marketing strategy offers is
+							lasting income. You will always earn commissions on the Distributors
+							you introduce to Forever Living, continually reaping the benefits of
+							your hard work. We&#8217;ve designed Forever Living for your
+							success. There&#8217;s little risk and unlimited potential. A passion for
+							success is all you need to achieve a level of prosperity you never
+							thought possible.
+							<img alt="Aloe Vera Gel" src="https://gallery.foreverliving.com/gallery/FLP/image/Marketing/Aloe_Gel.jpg" width="250" height="223"><img alt="Aloe Vera personal care section" src="https://gallery.foreverliving.com/gallery/FLP/image/Marketing/Group_Shot_Personal_care.jpg" width="250" height="215">
+							<!--end main body column-->
+							<a href="https://www.foreverliving.com/marketing/Join.do?store=USA&amp;language=en&amp;distribID=630000004130" target="_blank">Join Now</a>
+						</p>
+					</div>
+					<div class="block">
+						<h2 class="heading"><span class="left"><strong>Why Join Forever Living Products?</strong></span></h2>
+						<p class="small">
+							Forever Living Products
+							is a different kind of company that provides everyone with a better
+							quality of life through innovative wellness products and an unmatched
+							financial opportunity.</h4> <br>
+							<h2 style="text-align: center;"><img src="https://gallery.foreverliving.com/gallery/FLP/image/Marketing/MLM4.jpg" alt="Multi-Level Marketing" width="500" height="313"></h2><h2></h2><h2><br>Not All Businesses Are Created Equal</h2><br>
+							<h4>Forever Living Products is a company with a proven track record that shows
+							integrity with every business decision. While there are other companies
+							that claim to offer similar opportunities, it&#8217;s important to understand
+							what makes a successful multi-level marketing company. Look for these
+							important business practices:</h4>
+							<h3><br>Quality Product</h3><br>
+							<h4>Innovative, quality products speak of the credibility of the company&#8212;and you as a
+							Distributor. Look for a market leader with a proven track record.</h4>
+							<h3><br>No Pass-Ups</h3><br>
+							<h4>Nobody in your downline should ever be promoted above you. A promotion for them should be a promotion for you too.&nbsp; &nbsp;</h4>
+							<h3><br>No Demotions</h3><br>
+							<h4>A good marketing plan allows you to relax if you need to without worrying about being demoted for inactivity.</h4>
+							<h3><br>Bonuses Paid on Retail Prices</h3><br>
+							<h4>Bonuses on retail pricing means more money for you, the Distributor. Bonuses paid on wholesale pricing is a red flag. </h4>
+							<h3><br>Financial Stability</h3><br>
+							<h4>Steady growth is a strong indicator of a successful future. Review growth
+							charts and sales figures for the entire life of the company.</h4> 
+							<h3><br>Longevity</h3><br>
+							<h4>The longer a company has been around, the more experience and stability it
+							has. Look for a company with at least a 5-year track record of growth
+							and strong management. Forever Living&nbsp;has over a 30 year track
+							record of success.&nbsp;</h4>
+							<h3><br>Multiple Income Opportunities</h3><br>
+							<h4>A key advantage to being involved with an MLM business is that you can
+							enjoy multiple opportunities to earn money. A good company will offer
+							profit sharing, leadership, and royalty bonuses. &nbsp;</h4>
+							<h3><br>Consumable Products</h3><br>
+							<h4>An active customer base is critical to a successful home-based business.
+							This can only be built with quality consumable products. </h4>
+							<h3><br>Extensive Support Network</h3><br>
+							<h4>Your success represents the success of the company. A good company will
+							offer excellent training, seminars, incentives, and a support center. </h4>
+							<h3><br>International Presence</h3><br>
+							<h4>A company with an international presence demonstrates stability, growth, and ample industry experience.</h4>
+							<!--end main body column-->
+							<br>
+							<br><br>
+							<center>
+								<a href="https://www.foreverliving.com/marketing/Join.do?store=USA&amp;language=en&amp;distribID=630000004130" target="_blank">Join Now</a>
+							</center>
+						</p>
+					</div>
+					<div class="block">
+						<h2 class="heading"><span class="left"><strong>Your Success is Our Success</strong></span></h2>
+						<p class="small">
+							When you sign up to be a
+							Distributor, you become part of the Forever Living family. At Forever
+							Living Products, our business isn&#8217;t multi-million dollar ad campaigns
+							or cramming superstore shelves full of our products. Our business is
+							you! <br><br>Your upline sponsors and your Regional Sales Directors
+							are always there to help you. Plus, we provide you with excellent
+							training materials and access to our media library and archives.
+							Starting your own business sounds intimidating. But with support every
+							step of the way, you&#8217;ll know that your success is why we&#8217;re here. 
+							<img alt="Expensive cars" src="https://gallery.foreverliving.com/gallery/FLP/image/Marketing/red_car.jpg" width="250" height="167">
+							<img alt="Financial Success" src="https://gallery.foreverliving.com/gallery/FLP/image/Marketing/success.jpg" width="250" height="171">
+							<img alt="Expensive boat" src="https://gallery.foreverliving.com/gallery/FLP/image/Marketing/boat.jpg" width="250" height="167">
+							<center>
+								<a href="https://www.foreverliving.com/marketing/Join.do?store=USA&amp;language=en&amp;distribID=630000004130" target="_blank">Join Now</a></h1>
+							</center>
+						</p>
+					</div>	
+				</div>
+{% endblock %}

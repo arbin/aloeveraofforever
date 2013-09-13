@@ -1,0 +1,192 @@
+{% extends "base.html" %}
+{% block title %}<title>Aloe Vera of Forever Living Products | About</title>{% endblock %}
+{% block style %}
+	<style>
+
+		#head  {
+			background:url('{{ MEDIA_URL }}assets/img/slider/8.jpg');
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		#progress-bar {background:#a5dc4f}
+
+		.contact button,
+		#head .newsletter button,
+		.calltoaction a {
+			background-color:#a5dc4f;
+			background-image:-webkit-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-moz-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-ms-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-o-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			border-bottom:2px solid #609123;
+		}
+
+		.contact button:hover,
+		#head .newsletter button:hover,
+		.calltoaction a:hover {
+			background:#a5dc4f !important;
+		}
+
+		.contact button:active,
+		#head .newsletter button:active,
+		.calltoaction a:active {
+			background:#a5dc4f !important;
+			border-bottom-color:#7db535;
+		}
+
+		.hexagon {background:#a5dc4f;}
+		.hexagon:before {border-bottom-color: #a5dc4f}
+		.hexagon:after {border-top-color: #a5dc4f}
+
+		#pricing-table .popular h3 {
+			background-color:#a5dc4f;
+			background-image:-webkit-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-moz-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-ms-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-o-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:linear-gradient(top,#a5dc4f 0,#7db535 100%);
+		}
+
+		.social li a { background:#a5dc4f }
+
+		.testimonals aside a:hover,
+		.tweet_time a:hover,
+		.tweet_text a,
+		.copyright a:hover {
+			color:#7db535;
+		}
+
+{% endblock %}
+{% block yield %}
+	</style>
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<header id="head">
+
+		<div class="inner">
+		{% block message %}
+			<a href="/" ><img src="{{ MEDIA_URL }}assets/img/flp/flplogo.png" alt="Forever Living Products"/></a> <br />
+			
+			<div class="menu right">
+				<div id="menuContainer">
+					<div class="menus">
+						<a href="/">Home</a> | <a href="/about">About</a> | <a href="/opportunity">Opportunity</a> | <a href="/benefits-of-aloe">Benefits of Aloe</a> | <a href="/forever-living-products">Products</a> | <a href="http://aloeveraofforever.com/blog">Blog</a> | <a href="/faqs">FAQs</a>
+					</div>
+                                </div>
+                        </div>
+                        <div class="menu share-right">
+                                <div id="shareContainer">
+                                        <div class="menus">					
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://aloeveraofforever.com" data-via="aloeveraofforever" data-related="arbinbulaybulay" data-hashtags="aloevera">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!-- Place this tag where you want the +1 button to render -->
+<g:plusone></g:plusone>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	po.src = 'https://apis.google.com/js/plusone.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<div class="fb-like" data-href="http://aloeveraofforever.com" data-send="true" data-width="450" data-show-faces="true"></div>
+                                      	
+				        </div>
+                              </div>
+			</div>
+		{% endblock %}
+		</div>
+
+
+	</header>
+
+	<section class="body">
+
+		<div class="inner">
+
+				<div id="extra">
+
+					<div class="block">
+						<h2 class="heading"><span class="center"><strong>What is Aloe Vera of Forever?</strong></span></h2>
+						<p class="small">Aloe Vera of Forever are independent distributors of Forever Living Products.</p>						
+					</div>
+
+
+
+					<div class="block">
+						<h2 class="heading"><span class="center"><strong>How I Arrived at FLP?</strong></span></h2>
+						<p class="small">In 1996, I had been suffering from acute tonsilities. It was also the time that my mother was diagnosed with an ovarian cancer. My mother went through her operation in 1997. But before that she was drinking lots of aloe vera gel. It was amazing, after her operation, results were no more malignancy found. I was also introduced by my sister to use the aloe vera activator for my tonsilities. My doctor said he should take my tonsil out because the bacteria keeps on coming back but after many times of application, the bacteria never came back. Since 1997 until now, I never had any single attack with the bacteria. Try it for yourself and discover the many wonders of Aloe Vera products.</p>
+						<center>
+						<ul class="team">
+							<li>
+								<img src="{{ MEDIA_URL }}assets/img/arbin.png" alt="Arbin Bulaybulay">
+								<span class="name">Arbin Bulaybulay</span>
+								<span class="role">Entrepreneur</span>
+								<p>All the best! </p> <img src="{{ MEDIA_URL }}assets/img/flp/arbin-signature.png" alt="arbin bulaybulay" />
+								<ul class="social">
+									<li class="twitter"><a href="#">Twitter</a></li>
+									<li class="facebook"><a href="#">Facebook</a></li>
+									<li class="git"><a href="#">Git</a></li>
+								</ul>
+							</li>
+						</ul>
+						</center>
+					</div>
+					<div class="block">
+						<h2 class="heading"><span class="center"><strong>It's More Than Business. It's Family</strong></span></h2>
+						<center><img src="https://gallery.foreverliving.com/gallery/FLP/image/Marketing/Exec_Committee_ThumbsUp.jpg" width="550" height="352"></center>
+						<p class="small">The faces behind Forever Living aren&#8217;t those of executives, marketers, sales people, and computer technicians. <br><br>They&#8217;re the faces of our family. <br><br>When Rex Maughan created Forever Living in 1978, he did it to provide his
+friends and family with a higher quality of life. And that meant
+creating a company with a higher quality of business. A business where
+every choice is made with integrity. And every employee is family.
+<br><br>Get to know who we are, and you&#8217;ll see why Forever Living is so much more than just another company.</p>	
+					<p class="medium">Get to know who we are, and you&#8217;ll see why Forever Living is so much more than just another company.</p>
+					<a href="https://www.foreverliving.com/distrib/join/enterAddress.do?action=display&amp;store=USA&amp;langID=en" onclick="window.open(this.href," resizable="no,location=no,menubar=no,scrollbars=no,status=no,toolbar=no,fullscreen=no,dependent=no,status" return="" false=""><br><br>Join Now</a> and join our family!
+					</div>
+<br />
+<center>
+					<embed src='http://discoverforever.com/jwplayer/player.swf' height='450' width='800' bgcolor='0x000000' allowscriptaccess='always' allowfullscreen='true' flashvars="&backcolor=0x000000&controlbar=over&file=http%3A%2F%2Fdiscover-forever-videos.s3.amazonaws.com%2FFLV%2FChairmansBonus.flv&frontcolor=0xffffff&image=http%3A%2F%2Fdiscoverforever.com%2Fimages%2Flibrary%2Fpreview%2FchairmansBonus2Preview-1.jpg&lightcolor=0xffffff&plugins=viral-2h&screencolor=0x404040&skin=http%3A%2F%2Fdiscoverforever.com%2Fjwplayer%2Fmodieus%2Fmodieus.zip&stretching=fill&viral.callout=none&viral.onpause=false&viral.pluginmode=FLASH"/>
+</center>
+					<div class="block">
+						<h2 class="heading"><span class="center"><strong>Building Brighter Futures</strong></span></h2>
+						<p class="small">At Forever Living, we believe our greatest legacy is what we do for  others and how we do it. <br><br>We
+adhere to sustainable practices that let us work in harmony with the
+earth, leaving a more promising future to our children. We take great
+pride in our charity foundation, Forever Giving, because it allows us
+to help others around the world who have needs far greater than our
+own. <br><br>We&#8217;re taking ideas and turning them into reality. It&#8217;s a
+part of our business that&#8217;s so deeply ingrained you could call it our
+culture. <br><br>Working  towards a brighter future is so much more than our duty&#8212;it&#8217;s truly our  pleasure.
+<img src="https://gallery.foreverliving.com/gallery/FLP/image/Marketing/Field.jpg" alt="Aloe Vera fields" width="400" height="300"><img src="https://gallery.foreverliving.com/gallery/FLP/image/Marketing/AVA_017_w_stab.jpg" alt="Aloe Vera of America making Aloe Gel" width="300" height="225"><img src="https://gallery.foreverliving.com/gallery/FLP/image/Marketing/AerialBuilding2009.jpg" alt="Forever Living Product" s="" corporate="" office="" width="375" height="225"></p>						
+					</div>
+					
+					<div class="block">
+						<h2 class="heading"><span class="left"><strong>Write to us and we'll respond to you as soon as possible.</strong></span></h2>
+						<form class="contact" id="contact" action="{% url home %}" method="post"> {% csrf_token %}
+								<div class="form">
+									<input type="text" name="name" placeholder="Name" id="contactname" />
+									<input type="text" name="email" placeholder="Email" id="contactemail" />
+									<textarea name="message" placeholder="Message" id="contactmessage"></textarea>
+									<button>Contact</button>
+								</div>
+								<ul>									
+									<li class="email"><span>Email:</span> <a href="mailto:mail@companyname.com">support@aloeveraofforever.com</a></li>									
+								</ul>
+						</form>
+					</div>
+				</div>
+				
+{% endblock %}

@@ -1,0 +1,196 @@
+{% extends "inside-base.html" %}
+{% block title %}<title>How Many Calories Will I Burn? Online Calculator</title>
+<meta name="description" content="Find out how many calories you are burning when doing your favorite activities or how long you should do an activity to lose weight. Find the best exercise to lose weight." />
+<meta name="keywords" content="calorie burn counter,calorie burning counter,exercise calorie counter,calorie counter,calories burned per hour,calories burned in a day,calories burned per day,how many calories burned,how many calories will i burn,how many calories burned running" />
+{% endblock %}
+{% block style %}
+	<style>
+
+		#head  {
+			
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		#progress-bar {background:#a5dc4f}
+
+		.contact button,
+		#head .newsletter button,
+		.calltoaction a {
+			background-color:#a5dc4f;
+			background-image:-webkit-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-moz-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-ms-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-o-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			border-bottom:2px solid #609123;
+		}
+
+		.contact button:hover,
+		#head .newsletter button:hover,
+		.calltoaction a:hover {
+			background:#a5dc4f !important;
+		}
+
+		.contact button:active,
+		#head .newsletter button:active,
+		.calltoaction a:active {
+			background:#a5dc4f !important;
+			border-bottom-color:#7db535;
+		}
+
+		.hexagon {background:#a5dc4f;}
+		.hexagon:before {border-bottom-color: #a5dc4f}
+		.hexagon:after {border-top-color: #a5dc4f}
+
+		#pricing-table .popular h3 {
+			background-color:#a5dc4f;
+			background-image:-webkit-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-moz-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-ms-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-o-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:linear-gradient(top,#a5dc4f 0,#7db535 100%);
+		}
+
+		.social li a { background:#a5dc4f }
+
+		.testimonals aside a:hover,
+		.tweet_time a:hover,
+		.tweet_text a,
+		.copyright a:hover {
+			color:#7db535;
+		}
+
+{% endblock %}
+{% block yield %}
+	</style>
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<header id="head">
+
+		<div class="inner">
+		{% block message %}
+			<a href="/" ><img src="{{ MEDIA_URL }}assets/img/flp/flplogo.png" /></a> <br />
+			
+			<div class="menu right">
+				<div id="menuContainer">
+					<div class="menus">
+						<a href="/">Home</a> | <a href="/about">About</a> | <a href="/opportunity">Opportunity</a> | <a href="/benefits-of-aloe">Benefits of Aloe</a> | <a href="/forever-living-products">Products</a> | <a href="http://aloeveraofforever.com/blog">Blog</a> | <a href="/faqs">FAQs</a>
+					</div>
+				</div>
+			</div>
+                        
+		{% endblock %}
+		</div>
+
+		<!-- <div id="progress-back" class="load-item"><div id="progress-bar"></div></div> -->
+		<!-- <div id="countdown"></div> -->
+		<!-- <div class="contact_map" id="contact_map"></div> -->
+
+	</header>
+
+	<section class="body">
+
+		<div class="inner">
+
+				<div id="extra">
+					
+					<div class="block">
+						<h2 class="heading"><span class="left"><strong>How Many Calories Will I Burn?</strong></span></h2>
+						<p class="small">  Figure out ACCURATLEY how many calories your burning for every activity. In order to lose weight, it's important to find out how many calories you'll need to burn. To burn extra calories you can either eat less, exercise more or take weight loss program.</p>
+						
+						<label> {{ caloriesburned }} </label>
+						<form class="contact" id="contact" action="#" method="post"> {% csrf_token %}
+							<div class="form">
+								
+								<input type="text" name="weight" placeholder="Enter your weight in pounds." id="contactname" />
+								<input type="text" name="age" placeholder="Enter your age in years." id="contactname" />
+								<input type="text" name="heartrate" placeholder="Enter your heart rate in bpm." id="contactname" />
+								<input type="text" name="duration" placeholder="Enter duration of exercise in minutes." id="contactemail" />
+                                                                <input type="text" name="exercise" placeholder="What kind of exercise?(Optional)."/>
+								<ul>
+									<li><input type="radio" name="sex" value="men">Male</li>
+									<li><input type="radio" name="sex" value="women">Female</li>
+								</ul>
+								<button>Calculate</button>
+							</div>
+						</form>
+					<p> </p>	
+					<h2 class="heading"><span class="left"><strong> Related Apps </strong></span></h2>
+                                                <ul class="features">
+							
+                                                        <li>
+								
+								<p>
+									<a href="/basal-metabolic-rate"><strong>BMR</strong></a>
+									
+								</p>
+							</li>
+                                                        <li>
+								
+								<p>
+									<a href="/calorie-counter"><strong>Calorie Counter</strong></a>
+									
+								</p>
+							</li>
+                                                        <li>
+								
+								<p>
+									<a href="/how-many-calories-will-i-burn"><strong>Calories Burned</strong></a>
+									
+								</p>
+							</li>
+                                                        
+                                                        <li>
+								
+								<p>
+									<a href="/calorie-burned-for-running"><strong>Calories Burned for Running</strong></a>
+									
+								</p>
+							</li>
+<li>
+								
+								<p>
+									<a href="/cost-of-smoking"><strong>Cost of Smoking</strong></a>
+									
+								</p>
+							</li>
+<li>
+								
+								<p>
+									<a href="/pregnancy-gestational-diabetes-diet-calculator"><strong>Pregnancy Diabetes</strong></a>
+									
+								</p>
+							</li>
+<li>
+								
+								<p>
+									<a href="/ww-food-points"><strong>WW Food Points</strong></a>
+									
+								</p>
+							</li>
+							
+							
+						</ul>
+                                                <h2 class="heading"><span class="left"><strong> Related Article </strong></span></h2>
+                                                 <p> <a href="/weight-loss"> Weight Loss Program </a> </p>
+					</div>
+					<div class="block">
+						<h2 class="heading"><span class="left"><strong>Send a Greeting.</strong></span></h2>
+						<div class="fb-comments" data-href="http://aloeveraofforever.com/how-many-calories-will-i-burn/" data-width="470" data-num-posts="10"></div>
+					</div>
+					
+				</div>
+
+{% endblock %}

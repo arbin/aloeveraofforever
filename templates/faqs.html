@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+{% block title %}<title>Aloe Vera of Forever Living Products | Faqs</title>{% endblock %}
+{% block style %}
+
+	<style>
+
+		#head  {
+			background:url('{{ MEDIA_URL }}assets/img/slider/8.jpg');
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		#progress-bar {background:#a5dc4f}
+
+		.contact button,
+		#head .newsletter button,
+		.calltoaction a {
+			background-color:#a5dc4f;
+			background-image:-webkit-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-moz-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-ms-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-o-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			border-bottom:2px solid #609123;
+		}
+
+		.contact button:hover,
+		#head .newsletter button:hover,
+		.calltoaction a:hover {
+			background:#a5dc4f !important;
+		}
+
+		.contact button:active,
+		#head .newsletter button:active,
+		.calltoaction a:active {
+			background:#a5dc4f !important;
+			border-bottom-color:#7db535;
+		}
+
+		.hexagon {background:#a5dc4f;}
+		.hexagon:before {border-bottom-color: #a5dc4f}
+		.hexagon:after {border-top-color: #a5dc4f}
+
+		#pricing-table .popular h3 {
+			background-color:#a5dc4f;
+			background-image:-webkit-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-moz-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-ms-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:-o-linear-gradient(top,#a5dc4f 0,#7db535 100%);
+			background-image:linear-gradient(top,#a5dc4f 0,#7db535 100%);
+		}
+
+		.social li a { background:#a5dc4f }
+
+		.testimonals aside a:hover,
+		.tweet_time a:hover,
+		.tweet_text a,
+		.copyright a:hover {
+			color:#7db535;
+		}
+
+{% endblock %}
+{% block yield %}
+	</style>
+
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<header id="head">
+
+		<div class="inner">
+		{% block message %}
+			<a href="/" ><img src="{{ MEDIA_URL }}assets/img/flp/flplogo.png" /></a> <br />
+			
+			<div class="menu right">
+				<div id="menuContainer">
+					<div class="menus">
+						<a href="/">Home</a> | <a href="/about">About</a> | <a href="/opportunity">Opportunity</a> | <a href="/benefits-of-aloe">Benefits of Aloe</a> | <a href="/forever-living-products">Products</a> | <a href="http://aloeveraofforever.com/blog">Blog</a> | <a href="/faqs">FAQs</a>
+					</div>
+                                </div>
+                        </div>
+                        <div class="menu share-right">
+                                <div id="shareContainer">
+                                        <div class="menus">					
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://aloeveraofforever.com" data-via="aloeveraofforever" data-related="arbinbulaybulay" data-hashtags="aloevera">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!-- Place this tag where you want the +1 button to render -->
+<g:plusone></g:plusone>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	po.src = 'https://apis.google.com/js/plusone.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<div class="fb-like" data-href="http://aloeveraofforever.com" data-send="true" data-width="450" data-show-faces="true"></div>
+                                      	
+				        </div>
+                              </div>
+			</div>
+		{% endblock %}
+		</div>
+
+	</header>
+
+	<section class="body">
+
+		<div class="inner">
+
+				<div id="extra">
+
+					<div class="block">
+						<h2 class="heading"><span class="center"><strong>Q: How do I become a Distributor?</strong></span></h2>
+						<p class="small">A: The easiest way to join is to sign up using our online <a href="https://www.foreverliving.com/marketing/Join.do?store=USA&amp;language=en&amp;distribID=630000004130">Join Now</a> system.</p>						
+					</div>
+					
+					<div class="block">
+						<h2 class="heading"><span class="center"><strong>Q: Does it cost anything to Join?</strong></span></h2>
+						<p class="small">A: No, becoming a Forever Living Distributor is completely free.</p>						
+					</div>
+					
+					<div class="block">
+						<h2 class="heading"><span class="center"><strong>Q: Can I still buy products without joining as a Distributor?</strong></span></h2>
+						<p class="small">A: Yes, simply click on the <a href="https://www.foreverliving.com/retail/entry/Shop.do?store=USA&distribID=630000004130&language=en" target="_blank">Retail Shop</a> link at the top right of the page and you can shop as a retail customer.</p>						
+					</div>
+					
+					<div class="block">
+						<h2 class="heading"><span class="center"><strong>Q: What is the minimum purchasing order?</strong></span></h2>
+						<p class="small">A: For retail customers there is no minimum order. There is a $50 minimum order for all Distributors.</p>						
+					</div>
+					
+					<div class="block">
+						<h2 class="heading"><span class="center"><strong>Q: Can I return products?</strong></span></h2>
+						<p class="small">A: Distributors can return defective product within 30 days of the date of
+purchase. Retail customers can return product for any reason within 30
+days from the date of purchase. See <a target="_blank" href="http://gallery.foreverliving.com/gallery/FLP/download/Marketing/Co_Policy_Eng_NDP_NAmerica_Feb10.pdf">Company Policies</a>, section 3, for more details.</p>						
+					</div>
+					
+					<div class="block">
+						<h2 class="heading"><span class="center"><strong>Q: What is a case credit?</strong></span></h2>
+						<p class="small">A: Case credits are the units by which we measure sales volume. The
+products are assigned case credit values, and these values are
+accumulated as the product is purchased to determine level move-ups and
+qualification for various Distributor incentives.</p>						
+					</div>
+					
+					<div class="block">
+						<h2 class="heading"><span class="center"><strong>Q: How much is a case credit worth?</strong></span></h2>
+						<p class="small">A: A case credit is worth approximately $132 Wholesale, $160 New Distributor Pricing and $188 Retail.</p>						
+					</div>
+					
+					<div class="block">
+						<h2 class="heading"><span class="center"><strong>Q: What is the earning potential of a Forever Living Distributor?</strong></span></h2>
+						<p class="small">A: The earning potential is really up to you. Some Distributors work the
+business part-time to help supplement their income, while others work
+the business full-time earning substantial incomes.</p>						
+					</div>
+					
+					<div class="block">
+						<h2 class="heading"><span class="center"><strong>Q: Can I join and build my online business even if my country has no FLP Office?</strong></span></h2>
+						<p class="small">A: FLP is available in over 135 countries. You can find an FLP country office and there you can buy your products.
+ Once you can get your FLP ID number, then you can start building your website online retail store.</p>						
+					</div>
+
+
+
+					
+					
+				</div>
+
+{% endblock %}
