@@ -12,6 +12,11 @@ from pygeocoder import Geocoder
 
 EMAIL_DIRS = settings.EMAIL_DIRS
 
+"""
+Food Calories in dictionary
+- List for each item corresponds to [Fat(grams), Food energy(calorie), Carbohydrate(grams),
+                Protein(grams), Cholesterol(milligrams), Weight(grams), Saturated fat(grams)]
+"""
 food_calories = {'1000 ISLAND, SALAD DRSNG,LOCAL1 TBSP':[2,25,2,0,2,15,0.2],
                 '1000 ISLAND, SALAD DRSNG,REGLR1 TBSP':[6,60,2,0,4,16,1],
                 '100% NATURAL CEREAL 1 OZ':[6,135,18,3,0,28.35,4.1],
@@ -975,7 +980,7 @@ food_calories = {'1000 ISLAND, SALAD DRSNG,LOCAL1 TBSP':[2,25,2,0,2,15,0.2],
                 'YOGURT, W/ WHOLE MILK 8 OZ':[7,140,11,8,29,227,4.8]}
 
 def getlatlong(request):
-
+    """Get the latitude and longitude to identify which country and for country's specific details of FLP """
     return str(request.GET.get('longitude')), str(request.GET.get('latitude'))
 
 def home(request):
@@ -1021,6 +1026,8 @@ def weight_loss(request):
     return TemplateResponse(request, 'weight-loss.html', None)
 
 def products(request):
+    """Identify the country's product urls"""
+    
     latlong = request.session["latlong"]
 
     lat = float(latlong[1])
@@ -1054,6 +1061,7 @@ def products(request):
                 ), context_instance=RequestContext(request))
 
 def bmi(request):
+    """ Get body mass index """
     remarks = ""
     if request.method == 'POST':
         weight = float(request.POST['weight'])
@@ -1084,6 +1092,7 @@ def bmi(request):
                 ), context_instance=RequestContext(request))
 
 def calorie_burn(request):
+    """ Get calorie burn for running in miles"""
     if request.method == 'POST':
         weight = float(request.POST['weight'])
         miles = float(request.POST['miles'])
@@ -1105,6 +1114,7 @@ def calorie_burn(request):
                 ), context_instance=RequestContext(request))
 
 def calorie_counter(request):
+    """ Graph each calorie found in food """
     if request.method == 'POST':
         food = request.POST['fooddescription']
         caloriegraph = food_calories[food]
@@ -1121,6 +1131,7 @@ def calorie_counter(request):
                 ), context_instance=RequestContext(request))
 
 def bmr(request):
+    """ Get basal metabolic rate """
     remarks = ""
     if request.method == 'POST':
         weight = float(request.POST['weight'])
@@ -1158,6 +1169,7 @@ def bmr(request):
                 ), context_instance=RequestContext(request))
 
 def calories(request):
+    """ Get calories burn for an exercise duration """
     if request.method == 'POST':
         weight = float(request.POST['weight'])
         age = float(request.POST['age'])
@@ -1199,6 +1211,7 @@ def calories(request):
                 ), context_instance=RequestContext(request))
 
 def cost_of_smoking(request):
+    """ Calculate the cost of smoking """
     if request.method == 'POST':
         perday = float(request.POST['perday'])
         pack = float(request.POST['pack'])
