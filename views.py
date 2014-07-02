@@ -1,13 +1,8 @@
-# Create your views here.
-from django.template.response import TemplateResponse
-from django.core.mail import EmailMessage
-from django.contrib import messages
 from django.conf import settings
-
 from django.shortcuts import render_to_response
 from django.template import RequestContext
+from django.template.response import TemplateResponse
 
-import os
 from pygeocoder import Geocoder
 
 EMAIL_DIRS = settings.EMAIL_DIRS
