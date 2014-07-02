@@ -5,9 +5,11 @@
 *.pydevproject
 .project
 .metadata
+.idea
 bin/
 tmp/
 *.tmp
+*.pyc
 *.bak
 *.swp
 *~.nib
